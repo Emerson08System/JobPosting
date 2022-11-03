@@ -1,0 +1,16 @@
+- CustomerServiceAgent
+- CustomerServiceManager
+- TourVisaProcessingStaff
+- ProjectManager
+- SaleandMarketing
+- DocumentationManager
+- DocumentationOfficer
+- General Manager
+- ReservationOfficer
+- TravelConsultant
+- AdministrativeStaff
+- LiaisonStaff
+- SalesManager
+- DatabaseAdministrator
+- ITTechnicalOfficer
+- ITSecurityOfficer
