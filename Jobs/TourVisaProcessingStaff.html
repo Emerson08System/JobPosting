@@ -164,7 +164,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="contact-form">
               <div class="form-group">
-                <button type="submit" data-toggle="modal" data-target="#adduser" class="filled-button btn-block">Apply for this job</button>
+                <button type="submit" data-toggle="modal" data-target="#fillup" class="filled-button btn-block">Apply for this job</button>
               </div>
             </div>
 
@@ -248,113 +248,222 @@
           </div>
         </footer>
 
-    <div class="modal fade" id="adduser" aria-labelledby="exampleModalLabel" aria-hidden="true">
-             <div class="modal-dialog">
+ <!-- Modal -->
+        <div class="modal fade" id="fillup" aria-labelledby="fillup" aria-hidden="true">
+            <div class="modal-dialog">
              <div class="modal-content">
              <div class="modal-header">
-             <h4 class="modal-title">ENTER YOUR INFORMATION</h4>
+             <h4 class="modal-title">KINDLY FILL UP INFORMATION</h4>
              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                   </div>
                     <!-- Modal body -->
              <div class="modal-body">
-            <form id="" action="">
+             <form action="">
 
-                <div class="mb-3 row">
+              <div class="mb-3 row">
                   <label for="Lastname" class="col-md-3 form-label">Lastname</label>
                 <div class="col-md-9">
                   <input type="text" 
-                         class="form-control" 
-                         id="Lastname" 
-                         name="Lastname" 
-                         placeholder="Lastname" 
-                         required="required">
+                       class="form-control" 
+                       id="lastname" 
+                       name="lastname" 
+                       placeholder="Lastname"
+                       required="required">
                 </div>
-                </div>
+              </div>
 
               <div class="mb-3 row">
                   <label for="Firstname" class="col-md-3 form-label">Firstname</label>
-              <div class="col-md-9">
+                <div class="col-md-9">
                   <input type="text" 
-                         class="form-control" 
-                         id="Firstname" 
-                         name="Firstname" 
-                         placeholder="Firstname" 
-                         required="required">
-              </div>
+                       class="form-control" 
+                       id="firstname" 
+                       name="firstname" 
+                       placeholder="Firstname"
+                       required="required">
+                </div>
               </div>
 
               <div class="mb-3 row">
                   <label for="Middlename" class="col-md-3 form-label">Middlename</label>
-              <div class="col-md-9">
+                <div class="col-md-9">
                   <input type="text" 
-                         class="form-control" 
-                         id="Middlename" 
-                         name="Middlename" 
-                         placeholder="Middlename" 
-                         required="required">
-              </div>
+                       class="form-control" 
+                       id="middlename" 
+                       name="middlename" 
+                       placeholder="Middlename"
+                       required="required">
+                </div>
               </div>
 
               <div class="mb-3 row">
-                  <label for="Email" class="col-md-3 form-label">Email</label>
-              <div class="col-md-9">
-                    <input type="email" 
-                           class="form-control" 
-                           id="Email" name="Email" 
-                           placeholder="Email" 
-                           required="required">
+                  <label for="Age" class="col-md-3 form-label">Age</label>
+                <div class="col-md-9">
+                  <input type="number" 
+                       class="form-control" 
+                       id="age" 
+                       name="age" 
+                       placeholder="Age"
+                       required="required">
+                    </div>
               </div>
+
+              <div class="mb-3 row">
+                <label for="Gender" class="col-md-3 form-label">Gender</label>
+              <div class="col-md-9">
+                  <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                     type="radio" 
+                     name="gender" 
+                     id="gender" 
+                     value="gender"
+                     required="required">
+                <label class="form-check-label" for="gender">Male</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                    type="radio" 
+                    name="gender" 
+                    id="gender" 
+                    value="gender"
+                    required="required">
+                <label class="form-check-label" for="gender">Female</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                    type="radio" 
+                    name="gender" 
+                    id="gender" 
+                    value="gender"
+                    required="required">
+                <label class="form-check-label" for="gender">Undecided</label>
+          </div>
+          </div>
+          </div>
+
+        <div class="mb-3 row">
+                  <label for="Address" class="col-md-3">Complete Address</label>
+                  <div class="col-md-9">
+              <input type="text" 
+                   class="form-control" 
+                   id="address" 
+                   name="address" 
+                   placeholder="Street / Brgy / City / State / Zip Code"
+                   required="required">
+                </div>
+                </div>
+
+
+                 <div class="mb-3 row">
+                  <label for="Birthdate" class="col-md-3">Birthdate</label>
+                  <div class="col-md-9">
+              <input type="date" 
+                   class="form-control" 
+                   id="birthdate" 
+                   name="birthdate" 
+                   placeholder="Birthdate"
+                   required="required">
+                      </div>
+                </div>
+
+                <div class="mb-3 row">
+                  <label for="Birthplace" class="col-md-3">Birthplace</label>
+                  <div class="col-md-9">
+              <input type="text" 
+                   class="form-control" 
+                   id="birthplace" 
+                   name="birthplace" 
+                   placeholder="Birthplace City ( Ex : Davao City )"
+                   required="required">
+                      </div>
+                </div>
+
+                <div class="mb-3 row">
+                <label for="PositionTitle" class="col-md-3">Position Title</label>
+                <div class="col-md-9">
+                      <select class="form-select" 
+                            id="PositionTitle" 
+                            name="positiontitle" 
+                            aria-label="Floating label select example"
+                            required>
+
+                        <option selected disabled value="">Select Position Title</option>
+                        <option value="CustomerServiceAgent">Customer Service Agent</option>
+                        <option value="CustomerServiceManager">Customer Service Manager</option>
+                        <option value="TourVisaProcessingStaff">Tour Visa Processing Staff</option>
+                        <option value="ProjectManager">Project Manager</option>
+                        <option value="SaleandMarketing">Sale and Marketing</option>
+                        <option value="DocumentationManager">Documentation Manager</option>
+                        <option value="DocumentationOfficer">Documentation Officer</option>
+                        <option value="General Manager">General Manager</option>
+                        <option value="ReservationOfficer">Reservation Officer</option>
+                        <option value="TravelConsultant">Travel Consultant</option>
+                        <option value="AdministrativeStaff">Administrative Staff</option>
+                        <option value="LiaisonStaff">Liaison Staff</option>
+                        <option value="SalesManager">Sales Manager</option>
+                        <option value="DatabaseAdministrator">Database Administrator</option>
+                        <option value="ITTechnicalOfficer">IT Technical Officer</option>
+                        <option value="ITSecurityOfficer">ITSecurity Officer</option>
+                      </select>
+                 </div>
+                 </div>
+
+                 <div class="mb-3 row">
+                  <label for="Email" class="col-md-3 form-label">Email</label>
+                  <div class="col-md-9">
+                    <input type="email" 
+                         class="form-control" 
+                         id="email" 
+                         name="email" 
+                         placeholder="Email"
+                         required="required">
+                </div>
               </div>
 
               <div class="mb-3 row">
                   <label for="ContactNo" class="col-md-3 form-label">Contact No.</label>
-              <div class="col-md-9">
-                    <input type="text" 
-                           class="form-control" 
-                           id="ContactNo" 
-                           name="ContactNo" 
-                           placeholder="Contact No." 
-                           required="required">
-              </div>
-              </div>
-
-              <div class="mb-3 row">
-                  <label for="PositionTitle" class="col-md-3 form-label">Position Title</label>
-              <div class="col-md-9">
-                      <p><b>Tour Visa Processing Staff</b></p>
+                <div class="col-md-9">
+                    <input type="number" 
+                         class="form-control" 
+                         id="ContactNo" 
+                         name="contactno" 
+                         placeholder="Contact No."
+                         required="required">
+                </div>
               </div>
 
               <div class="mb-3 row">
-                  <label for="UploadCV" class="col-md-3 form-label">Upload Curriculum Vitae</label>
-              <div class="col-md-9">
+                  <label for="CV" class="col-md-3 form-label">Upload Curriculum Vitae</label>
+                  <div class="col-md-9">
                     <input type="file" 
-                           class="form-control" 
-                           id="UploadCV" 
-                           name="UploadCV" 
-                           placeholder="Upload your CV File" 
-                           required="required">
-              </div>
+                         class="form-control" 
+                         id="cv" 
+                         name="cv" 
+                         placeholder="Upload your CV File"
+                         required="required">
+                </div>
               </div>
 
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
 
-                <div class="text-center"><br>
+                 <div class="text-center"><br>
                     <p><b>AFTER FILL UP INFORMATION KINDLY WAIT FOR<br> 
-                          MESSAGE FOR SCHEDULE OF YOUR INTERVIEW<br><br>
+                          TEXT MESSAGE OR EMAIL FOR SCHEDULE OF YOUR <br>
+                          INTERVIEW<br><br>
                           THANK YOU !!</b></p>
                 </div>
-            </form>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-            
-            </div>
-            </div>
-            </div> 
+          </form>
+          </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          </div>
+          </div>
+          </div> 
 
 
  <!-- Bootstrap core JavaScript -->
